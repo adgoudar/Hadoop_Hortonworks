@@ -1,0 +1,21 @@
+## Introduction
+
+The Sandbox is a straightforward, pre-configured, learning environment that contains the latest developments from Apache Hadoop, specifically the Hortonworks Data Platform (HDP). 
+
+HDF - is used to handle Data in Motion
+HDP - is used to handle Data at Rest
+But HDP contains storm (real time message processing) and Kafka ( distributed messaging system ).
+
+
+### Steps for Environment Setup
+1. Determine Network Adapter of the Sandbox:
+
+###Network Address Translation(NAT)
+By default, the VM attaches to Network Address Translation (NAT) network mode.
+The guest’s IP address by default translates over to the host’s IP address.
+NAT allows for the guest system to connect to external devices on external networks, but external devices cannot access the guest system.
+
+2. Bridged Networking
+
+
+
