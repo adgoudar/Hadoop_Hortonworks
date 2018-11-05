@@ -1,1 +1,47 @@
 
+## Introduction
+
+The Sandbox is a straightforward, pre-configured, learning environment that contains the latest developments from Apache Hadoop, specifically the Hortonworks Data Platform (HDP). 
+
+HDF - is used to handle Data in Motion
+HDP - is used to handle Data at Rest
+But HDP contains storm (real time message processing) and Kafka ( distributed messaging system ).
+
+## Data Trends
+Hadoop was specifically designed to wor with Big Data. The term big Data comes from the computational sciences.
+
+### 3 V's of Data
+* Variety - Types of data being generated. (Structured data in tradional databases, semi-structured data like XML, JSOn, Unstructured text documents, email etc)
+* Velocity -The rate at which new data is generated.
+* Volume - The amount of data being generated (Transaction, unstructured data streaming, Incresing amounts of sensor and machine-to-machine data)
+
+
+### Apache Hadoop
+It is a scalable, fault tolerant, open source framework for the distributed storing and processing of large sets of data on commity hardware.
+
+Scalable - Hadoop clusters can range from as few as one machine to thousands of machines/
+Fault tolerant - Hadoop services become fault tolerant through redundancy. E.g. : HDPF automatically replicated data blocks to 3 separate machines, assuming that your cluster has 3 machines in it. Hadoop services are replicated to avoid any single points of failure.
+Distributed - Large datasets are automatically split into smaller chunks called blocks and distributed across the cluster machines. Each machine processes its local block of data. This means that processing is distributed too.
+Commidity - All of the above occurs on commidity hardware which reduces the purchase price and support cost.
+
+
+```
+Hadoop Core = Storage + Compute
+```
+
+Compute via YARN (Yet another resource Negotiator)
+Store via HDFS
+
+YARN supports multiple, heterogenous data access engines that analyze one shared big data set with batch processing, interactive query serarch, analysis of streaming data or iterative machine learning. All these can run simultaneously, centrally managed by YARN. 
+
+
+
+### Steps for Environment Setup
+1. Determine Network Adapter of the Sandbox:
+
+###Network Address Translation(NAT)
+By default, the VM attaches to Network Address Translation (NAT) network mode.
+The guest’s IP address by default translates over to the host’s IP address.
+NAT allows for the guest system to connect to external devices on external networks, but external devices cannot access the guest system.
+
+2. Bridged Networking
