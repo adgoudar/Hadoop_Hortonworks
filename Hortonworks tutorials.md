@@ -7,8 +7,10 @@ HDF - is used to handle Data in Motion
 HDP - is used to handle Data at Rest
 But HDP contains storm (real time message processing) and Kafka ( distributed messaging system ).
 
+## __Case of Hadoop__
+
 ## Data Trends
-Hadoop was specifically designed to wor with Big Data. The term big Data comes from the computational sciences.
+Hadoop was specifically designed to work with Big Data. The term big Data comes from the computational sciences.
 
 ### 3 V's of Data
 * Variety - Types of data being generated. (Structured data in tradional databases, semi-structured data like XML, JSOn, Unstructured text documents, email etc)
@@ -19,20 +21,46 @@ Hadoop was specifically designed to wor with Big Data. The term big Data comes f
 ### Apache Hadoop
 It is a scalable, fault tolerant, open source framework for the distributed storing and processing of large sets of data on commity hardware.
 
-Scalable - Hadoop clusters can range from as few as one machine to thousands of machines/
-Fault tolerant - Hadoop services become fault tolerant through redundancy. E.g. : HDPF automatically replicated data blocks to 3 separate machines, assuming that your cluster has 3 machines in it. Hadoop services are replicated to avoid any single points of failure.
-Distributed - Large datasets are automatically split into smaller chunks called blocks and distributed across the cluster machines. Each machine processes its local block of data. This means that processing is distributed too.
-Commidity - All of the above occurs on commidity hardware which reduces the purchase price and support cost.
+* Scalable - Hadoop clusters can range from as few as one machine to thousands of machines/
+* Fault tolerant - Hadoop services become fault tolerant through redundancy. E.g. : HDPF automatically replicated data blocks to 3 separate machines, assuming that your cluster has 3 machines in it. Hadoop services are replicated to avoid any single points of failure.
+* Distributed - Large datasets are automatically split into smaller chunks called blocks and distributed across the cluster machines. Each machine processes its local block of data. This means that processing is distributed too.
+* Commidity - All of the above occurs on commidity hardware which reduces the purchase price and support cost.
 
 
 ```
 Hadoop Core = Storage + Compute
 ```
-
 Compute via YARN (Yet another resource Negotiator)
 Store via HDFS
 
 YARN supports multiple, heterogenous data access engines that analyze one shared big data set with batch processing, interactive query serarch, analysis of streaming data or iterative machine learning. All these can run simultaneously, centrally managed by YARN. 
+
+### Popular Use cases for Hadoop
+* Data discovery - Uncover new insights of the data.
+* Single View - Use Hadoop to unify all the scattered data and paint a single view of their (Company's) business
+* Predictive Analytics - Predict the future outcomes with far more certainity. E.g. for proactive repairs to equipment, recommend next product to buy etc.
+
+### Characteristics of Data Discovery Use Cases
+* Variety of sources - Combine data from any and all new sources with more variable structures.
+* Fragmentation - Data scattered across different groups and databases.
+* Short retention Horizons - too expensive to keep data for very long.
+
+### Characteristics of Single View Use cases
+* Storage Fragmentation - Data scattered across many platforms.
+* Customer Blind spots - subsection of customer interactions.
+* Incomplete Failure Analysis = Difficult to identify root causes acoss multiple business touch points.
+* Imperfect Collaboration - Routinely ask other groups for data.
+
+### Characteristics of Predictive Analytics Use Cases
+* Poor confidence - Predictions with high uncertainity.
+* Preventative Maintenance - Fix or Replace equipment before it breaks.
+* Insufficient Capacity - Make subset of the predictions you need.
+* Recommendation Engines - Automatically suggest the next product to buy.
+* Familiar Surprisese - Aware of problems that will happen, but surprised and unprepared when they do.
+
+
+
+
 
 
 
