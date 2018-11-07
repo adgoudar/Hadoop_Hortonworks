@@ -58,6 +58,27 @@ YARN supports multiple, heterogenous data access engines that analyze one shared
 * Recommendation Engines - Automatically suggest the next product to buy.
 * Familiar Surprisese - Aware of problems that will happen, but surprised and unprepared when they do.
 
+## __The Hadoop Ecosystem__
+
+### Data Management Frameworks
+
+There are two data management frameworks
+* HDFS : A java-based, distributed file system that provides scalable, reliable, high-throughput access to application data stored across commodity servers.
+* YARN : A framework for cluster resource management and job scheduling. It enables multiple data processing engines such as interactive SQL, real-time streaming, and batch processing to co-exist on a single cluster.
+
+### Operations Framwork
+* Apache Ambari : A web based, open operational framework for provisioning, managing and monitoring Hadoop clusters. It includes an intuitive collection of operator tools and set of RESTful APIs that masks the complexity of Hadoop.
+* Apache ZooKeeper : A high-performance coordination service for distributed applications.
+* Cloudbreak : A cloud agnostic tool for provisioning and managing Hadoop clusters in the cloud. It automates the launching of elastic Hadoop clusters with policy-based autoscaling on the major cloud infrastructure platforms including Azure, AWS, OpenStack and Docker containers.
+* Oozie : A server-based workflow engine used to execute Hadoop jobs. It enables Hadoop users to build and schedule complex data transformations by combining Mapreduce, Hive, Pig and Sqoop jobs into a single, logical unit of work.
+
+### Data Access Frameworks
+
+Pig : For extracting, transforming or analyzing large datasets
+Hive : A data warehouse infrastructure that supports ad hoc SQL queries.
+HCatalog : A table information, schema and metadata management layer supporting Hive, Pig, MapReduce and Tez Processing.
+Cascading : An application development framework for builing data applications, abstracting the details of complex MapReduce programming.
+HBase : 
 
 
 
